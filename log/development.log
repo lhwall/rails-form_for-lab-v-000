@@ -432,3 +432,23 @@ SystemExit (exit):
   app/views/school_classes/show.html.erb:2:in `_app_views_school_classes_show_html_erb___2601593929910855861_69977477482560'
 
 
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (203.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (48.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (295.6ms)
+
+
+Started GET "/school_classes/new" for 50.200.219.118 at 2018-07-09 14:42:42 +0000
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 178ms (Views: 165.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for 50.200.219.118 at 2018-07-09 14:42:46 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1WEq1c6hs2P0Rdb+HjPV0NZoi/17IF/t7LgIdXDGbAiQftDBRCAK916+s882RPVl+iCRnr6/ICQgPftHkKiCvQ==", "school_class"=>{"title"=>"c", "room_number"=>"3"}, "commit"=>"Create School class"}
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "school_classes" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-07-09 14:42:46.969271"], ["updated_at", "2018-07-09 14:42:46.969271"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
