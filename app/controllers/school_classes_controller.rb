@@ -7,6 +7,7 @@ class SchoolClassesController < ApplicationController
   def create
     @school_class = SchoolClass.create({:title => params[:title], :room_number => params[:room_number]})
     @school_class.save
+    byebug
     redirect_to school_class_path(@school_class)
   end
 
