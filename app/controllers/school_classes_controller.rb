@@ -21,7 +21,8 @@ class SchoolClassesController < ApplicationController
 
   def update
     @school_class = SchoolClass.find(params[:id])
-    @school_class.update(params.permit({:school_class => [:title, :room_number]}))
+    update_hash = {:title => params[:title], :room_number => params[:room_number]}
+    @school_class.update(update_hash.permit(:title, :room_number))
     @school_class.save
     byebug
     redirect_to school_class_path(@school_class)
