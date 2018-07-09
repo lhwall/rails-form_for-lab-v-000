@@ -4,7 +4,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @school_class = SchoolClass.new(params)
+    @school_class = SchoolClass.new({:title => "Computer Science", :room_number => 5})
   end
 
   def show
