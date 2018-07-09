@@ -1,19 +1,20 @@
 class StudentsController < ApplicationController
 
-  def new 
+  def new
   end
 
-  def create 
+  def create
     @student = Student.create({:first_name = params[:first_name], :last_name = params[:last_name]})
-  end 
+    redirect_to student_path(@student)
+  end
 
   def show
-  end 
+  end
 
-  def edit 
-  end 
+  def edit
+  end
 
   def update
-  end 
+  end
 
 end 
