@@ -465,3 +465,10 @@ SystemExit (exit):
 
 
 Started POST "/school_classes" for 50.200.219.118 at 2018-07-09 14:44:25 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1WEq1c6hs2P0Rdb+HjPV0NZoi/17IF/t7LgIdXDGbAiQftDBRCAK916+s882RPVl+iCRnr6/ICQgPftHkKiCvQ==", "school_class"=>{"title"=>"d", "room_number"=>"4"}, "commit"=>"Create School class"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "d"], ["room_number", 4], ["created_at", "2018-07-09 14:44:26.396489"], ["updated_at", "2018-07-09 14:44:26.396489"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  commit transaction
