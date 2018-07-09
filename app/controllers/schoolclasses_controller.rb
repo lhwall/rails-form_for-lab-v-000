@@ -1,19 +1,19 @@
 class SchoolClassesController < ApplicationController
 
-  def new 
+  def new
   end
 
-  def create 
+  def create
     @school = School.new(params)
-  end 
+  end
 
   def show
-  end 
+  end
 
-  def edit 
-  end 
+  def edit
+  end
 
   def update
-  end 
+  end
 
-end 
+end
