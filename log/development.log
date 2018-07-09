@@ -408,3 +408,10 @@ Started GET "/school_classes/2" for 50.200.219.118 at 2018-07-09 14:41:42 +0000
 Processing by SchoolClassesController#show as HTML
   Parameters: {"id"=>"2"}
   [1m[36mSchoolClass Load (0.1ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered school_classes/show.html.erb within layouts/application (43621.0ms)
+Completed 500 Internal Server Error in 43627ms (ActiveRecord: 0.1ms)
+
+SystemExit (exit):
+  app/views/school_classes/show.html.erb:2:in `_app_views_school_classes_show_html_erb___2601593929910855861_69977477482560'
+
+
