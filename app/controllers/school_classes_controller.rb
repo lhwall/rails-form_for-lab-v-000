@@ -4,6 +4,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    byebug
     @school_class = SchoolClass.create({:title => "Computer Science", :room_number => 5})
   end
 
