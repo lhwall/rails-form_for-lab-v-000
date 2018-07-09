@@ -21,7 +21,7 @@ class SchoolClassesController < ApplicationController
 
   def update
     @school_class = SchoolClass.find(params[:id])
-    update_hash = {:title => params[:title], :room_number => params[:room_number]}
+    update_hash = {:title => params[:school_class][:title], :room_number => params[:school_class][:room_number]}
     @school_class.update(update_hash.permit(:title, :room_number))
     @school_class.save
     byebug
