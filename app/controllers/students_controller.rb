@@ -7,7 +7,7 @@ class StudentsController < ApplicationController
   def create
     @student = Student.create({:first_name => params[:students][:first_name], :last_name => params[:students][:last_name]})
     @student.save
-    byebug
+    #byebug
     redirect_to student_path(@student)
   end
 
