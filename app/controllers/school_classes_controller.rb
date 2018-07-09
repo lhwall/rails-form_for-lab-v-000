@@ -23,7 +23,7 @@ class SchoolClassesController < ApplicationController
     @school_class = SchoolClass.find(params[:id])
     @school_class.update(params.require(:school_class).permit(:title, :room_number))
     @school_class.save
-    byebug
+    #byebug
     redirect_to school_class_path(@school_class)
   end
 
