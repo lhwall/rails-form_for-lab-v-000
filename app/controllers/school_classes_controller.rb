@@ -6,6 +6,7 @@ class SchoolClassesController < ApplicationController
   def create
     @school_class = SchoolClass.create({:title => "Computer Science", :room_number => 5})
     @school_class.save
+    redirect_to school_classes_path(@school_class)
   end
 
   def show
